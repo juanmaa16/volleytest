@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements MainMenuFragment.
 
     @Override
     public void navigateToUserData() {
-        UserFragment userFragment = new UserFragment();
+        UserGsonReqFragment userFragment = new UserGsonReqFragment();
         navigateTo(userFragment);
     }
 
@@ -44,7 +44,8 @@ public class MainActivity extends AppCompatActivity implements MainMenuFragment.
 
     @Override
     public void navigateToImageScreen() {
-        //TODO create the image screen fragment
+        ImageScreenFragment imageScreenFragment = new ImageScreenFragment();
+        navigateTo(imageScreenFragment);
     }
 
     /**
